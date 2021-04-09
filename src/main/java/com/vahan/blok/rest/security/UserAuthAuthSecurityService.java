@@ -1,12 +1,8 @@
 package com.vahan.blok.rest.security;
 
-import com.vahan.blok.rest.model.User;
 import com.vahan.blok.rest.exception.UnauthorizedException;
+import com.vahan.blok.rest.model.User;
 import com.vahan.blok.rest.repository.UserRepository;
-import com.vahan.blok.rest.service.UserService;
-import com.vahan.blok.rest.util.JwtTokenUtil;
-import lombok.RequiredArgsConstructor;
-import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -14,9 +10,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-
 import java.util.ArrayList;
-import java.util.Optional;
 
 @Service
 

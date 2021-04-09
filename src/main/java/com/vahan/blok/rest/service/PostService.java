@@ -1,12 +1,9 @@
 package com.vahan.blok.rest.service;
 
 import com.vahan.blok.rest.dto.req.PostCreateRequest;
-import com.vahan.blok.rest.model.Comment;
 import com.vahan.blok.rest.model.Post;
 import com.vahan.blok.rest.model.User;
 import com.vahan.blok.rest.repository.PostRepository;
-import com.vahan.blok.rest.security.AuthSecurityService;
-import com.vahan.blok.rest.security.CurrentUser;
 import com.vahan.blok.rest.security.UserAuthAuthSecurityService;
 import com.vahan.blok.rest.util.PostUtil;
 import lombok.RequiredArgsConstructor;
@@ -18,7 +15,6 @@ import java.io.File;
 import java.io.IOException;
 import java.time.Clock;
 import java.time.LocalDateTime;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 
