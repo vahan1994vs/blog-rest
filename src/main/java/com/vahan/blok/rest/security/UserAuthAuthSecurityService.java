@@ -49,18 +49,7 @@ public class UserAuthAuthSecurityService implements UserDetailsService, AuthSecu
         }
 
         throw new UnauthorizedException("Can't find any authenticated user on this request");
-    }
 
-//        private String getPostedInUserEmail() {
-//
-//            Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-//            Object principal = authentication.getPrincipal();
-//            if (principal instanceof String && (principal).equals("anonymousUser")) {
-//                throw new UnauthorizedException("Can't find any authenticated user on this request");
-//            }
-//            assert principal instanceof UserDetails;
-//            UserDetails userDetails = (UserDetails) principal;
-//            return (userDetails.getUsername());
-//        }
+    }
 
 }
