@@ -45,6 +45,8 @@ public class UserController {
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public ResponseEntity<?> auth(@RequestBody UserAuthRequest userAuthRequest, HttpServletRequest request) {
         User user = null;
+
+        
         try {
             user = userService.findByEmail(userAuthRequest.getEmail());
 
