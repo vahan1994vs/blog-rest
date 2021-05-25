@@ -38,7 +38,7 @@ public class PostController {
         return ResponseEntity.ok(allPostsByUser);
     }
 
-    @RequestMapping(value = "get-sll-posts", method = RequestMethod.GET)
+    @RequestMapping(value = "get-all-posts", method = RequestMethod.GET)
     public ResponseEntity<List<Post>> findAllPosts() {
         List<Post> allPost = postService.findAllPost();
         return ResponseEntity.ok(allPost);

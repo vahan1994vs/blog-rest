@@ -42,16 +42,12 @@ public class UserService {
         User user = UserUtil.dtoToUser(userRegisterRequest);
         return userRepository.save(user);
     }
-
     public boolean isUserExist(String email) {
         return userRepository.findByEmail(email).isPresent();
     }
-
     public User findByEmail(String email) throws ModelNotFoundException {
         return userRepository.findByEmail(email).orElseThrow(ModelNotFoundException::new);
     }
-
-
     public List<User> findByRole(Role role) {
         return userRepository.findAllByRole(role);
     }

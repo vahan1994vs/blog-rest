@@ -1,12 +1,11 @@
 package com.vahan.blok.rest.controller;
 
 import com.vahan.blok.rest.dto.req.UserAuthRequest;
-import com.vahan.blok.rest.model.User;
 import com.vahan.blok.rest.dto.req.UserRegisterRequest;
 import com.vahan.blok.rest.dto.resp.UserAuthResponse;
 import com.vahan.blok.rest.exception.ModelAlreadyExistException;
 import com.vahan.blok.rest.exception.ModelNotFoundException;
-import com.vahan.blok.rest.security.UserAuthAuthSecurityService;
+import com.vahan.blok.rest.model.User;
 import com.vahan.blok.rest.service.UserService;
 import com.vahan.blok.rest.util.JwtTokenUtil;
 import com.vahan.blok.rest.util.UserUtil;
